@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-st.title('🤖 Machine Learning App')
+st.title('🐧 Machine Learning App')
 
 st.info("This app builds a machine learning model.")
 
@@ -42,14 +42,18 @@ with st.sidebar:
   input_df = pd.DataFrame(data, index=[0])
   input_penguins = pd.concat([input_df, X], axis=0)
 
+  #Encode
+  encode = ['island', 'sex']
+  df_penguins = pd.get_dummies(input_penguins, prefix=encode)
+  input_row = df_penguins[:1]
+
 with st.expander('Input Features'):
   st.write('**Input Penguin**')
   input_df
   st.write('**Combines Penguins Data**')
   input_penguins
+  st.write('Encoded Input Penguin')
+  input_row
 
-#Encode
-encode = ['island', 'sex']
-df_penguins = pd.get_dummies(input_penguins, prefix=encode)
-df_penguins[:1]
+
 
