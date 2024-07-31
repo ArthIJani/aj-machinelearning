@@ -6,7 +6,6 @@ from sklearn.ensemble import RandomForestClassifier
 st.set_page_config(
         page_title="Penguin Species Classification",
         page_icon=":penguin:",
-        layout="wide",
     )
 
 st.title('🐧 Penguin Species Classification')
