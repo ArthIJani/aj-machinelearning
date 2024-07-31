@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 
-st.title('🐧 Penguin Species Classification Machine Learning App')
+st.title('🐧 Penguin Species Classification')
 
 st.info("This app builds a machine learning model.")
 
