@@ -3,6 +3,12 @@ import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 
+st.set_page_config(
+        page_title="Penguin Species Classification",
+        page_icon=":penguin:",
+        layout="wide",
+    )
+
 st.title('🐧 Penguin Species Classification')
 
 st.info("This app builds a machine learning model.")
