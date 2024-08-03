@@ -2,8 +2,7 @@
 
 Made using Random Forest Classification
 
-## Data Used
-[Data Link](https://raw.githubusercontent.com/dataprofessor/data/master/penguins_cleaned.csv)
+Data Used - [Data Link](https://raw.githubusercontent.com/dataprofessor/data/master/penguins_cleaned.csv)
 
 ## Live App
 
